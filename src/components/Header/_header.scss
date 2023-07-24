@@ -1,0 +1,28 @@
+@import '../../assets/sass/variables';
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+
+    img {
+        width: 15%;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 55px;
+
+        li {
+            .active {
+                color: $primary-color;
+                text-decoration: underline;
+            }
+            .inactive {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
