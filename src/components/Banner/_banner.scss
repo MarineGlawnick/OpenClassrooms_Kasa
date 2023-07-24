@@ -1,0 +1,22 @@
+.banner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border: none;
+        border-radius: 25px;
+        filter: brightness(60%);
+    }
+
+    h1 {
+        z-index: 2;
+        position: absolute;
+        font-size: 48px;
+        font-weight: 500;
+        color: white
+    }
+}
