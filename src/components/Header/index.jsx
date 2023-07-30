@@ -11,12 +11,12 @@ function Header() {
             <nav>
                 <ul >
                     <li>
-                        <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/">
-                            Acceuil
+                        <NavLink  to="/">
+                            Accueil
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to="/about">
+                        <NavLink  to="/about">
                             A propos
                         </NavLink>
                     </li>

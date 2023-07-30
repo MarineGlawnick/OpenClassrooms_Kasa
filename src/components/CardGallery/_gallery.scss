@@ -1,0 +1,12 @@
+@import '../../assets/sass/variables';
+
+.home_gallery {
+    margin: 40px 0;
+    background-color: $grey-color ;
+    border-radius: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 50px;
+}
