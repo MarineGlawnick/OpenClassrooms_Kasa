@@ -6,7 +6,7 @@ function CardGallery() {
     return (
         <section className='home_gallery'>
             {housings.map((housing) => (
-                <Card image={housing.cover} id={housing.id} title={housing.title} />
+                <Card image={housing.cover} id={housing.id} title={housing.title} key={housing.id} />
             ))}
         </section>
     )
