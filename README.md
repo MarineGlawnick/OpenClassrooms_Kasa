@@ -1,6 +1,5 @@
 # OC - Projet 7 : Kasa
 
----
 
 ![](/home/s15377/Documents/OpenClassrooms_Kasa/src/assets/img/logo_header.svg)
 
