@@ -1,5 +1,5 @@
 import "./_collapse.scss"
-import {useState} from "react";
+import { useState } from "react";
 import arrowDown from "../../assets/img/arrow_down.svg"
 import arrowUp from "../../assets/img/arrow_up.svg"
 
@@ -10,11 +10,9 @@ function Collapse(props) {
     }
     return (
         <div className="collapse_container">
-            <div className="collapse_container__title">
+            <div className="collapse_container__title" onClick={setOpenCollapse}>
                 <h1>{props.title}</h1>
-                <div onClick={setOpenCollapse}>
-                    {isOpen ? <img src={arrowUp} alt="An arrow pointing up"/> : <img src={arrowDown} alt="An arrow pointing down"/>}
-                </div>
+                {isOpen ? <img src={arrowUp} alt="An arrow pointing up" /> : <img src={arrowDown} alt="An arrow pointing down" />}
             </div>
             {isOpen &&
                 <div className="collapse_container__content">
