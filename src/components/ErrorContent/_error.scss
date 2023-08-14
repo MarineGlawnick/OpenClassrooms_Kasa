@@ -1,0 +1,26 @@
+@import '../../assets/sass/variables';
+
+.error {
+    color: $primary-color;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 52px;
+    }
+
+    &__link {
+        display: block;
+        color: $primary-color;
+        margin: 180px 0;
+    }
+
+}

@@ -1,6 +1,10 @@
+import ErrorContent from "../components/ErrorContent"
+
 function Error404() {
     return (
-        <div>404</div>
+        <main>
+            <ErrorContent />
+        </main>
     )
 }
 export default Error404
