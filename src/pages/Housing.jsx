@@ -1,7 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
+import housing from "../datas/housing.json";
+import '../assets/sass/pages/_housing.scss';
 import Carousel from "../components/Carousel";
-import housing from "../datas/housing.json"
 import HousingTitle from "../components/HousingTitle";
+import Tags from "../components/Tags";
 
 function Housing() {
     const { id } = useParams()
@@ -11,10 +13,13 @@ function Housing() {
     }
 
     return (
-        <main>
+        <main className="housing">
             <Carousel Images={logement.pictures} />
-            <div>
-                <HousingTitle title={logement.title} location={logement.location} />
+            <div className="housing__info">
+                <div className="housing__presentation">
+                    <HousingTitle title={logement.title} location={logement.location} />
+                    < Tags tags={logement.tags} />
+                </div>
             </div>
         </main>
     )

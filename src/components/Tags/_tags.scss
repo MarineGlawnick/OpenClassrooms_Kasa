@@ -1,0 +1,17 @@
+@import "../../assets/sass/variables";
+
+.tag {
+    display: flex;
+    gap: 10px;
+
+    &__container {
+        background-color: $primary-color;
+        padding: 5px 40px;
+        border-radius: 10px;
+    }
+
+    &__name {
+        margin: 0;
+        color: white;
+    }
+}
