@@ -6,9 +6,15 @@
     align-items: center;
     padding-top: 40px;
 
-    img {
+    &__logo {
         width: 15%;
+
+        img {
+            width: 100%;
+        }
     }
+
+
 
     ul {
         list-style-type: none;
