@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import housing from "../datas/housing.json"
+import HousingTitle from "../components/HousingTitle";
 
 function Housing() {
     const { id } = useParams()
@@ -12,6 +13,9 @@ function Housing() {
     return (
         <main>
             <Carousel Images={logement.pictures} />
+            <div>
+                <HousingTitle title={logement.title} location={logement.location} />
+            </div>
         </main>
     )
 
