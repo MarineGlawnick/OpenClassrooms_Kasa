@@ -1,4 +1,9 @@
 .housing {
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__presentation {
         display: flex;
         flex-direction: column;

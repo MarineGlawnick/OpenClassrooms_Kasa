@@ -5,10 +5,12 @@ import Carousel from "../components/Carousel";
 import HousingTitle from "../components/HousingTitle";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse"
+import HostInfo from "../components/HostInfo";
 
 function Housing() {
     const { id } = useParams()
     const logement = housing.find((logement) => logement.id === id)
+
     if (!logement) {
         return <Navigate to="/Error404" />
     }
@@ -20,6 +22,9 @@ function Housing() {
                 <div className="housing__presentation">
                     <HousingTitle title={logement.title} location={logement.location} />
                     < Tags tags={logement.tags} />
+                </div>
+                <div>
+                    <HostInfo image={logement.host.picture} host={logement.host.name} />
                 </div>
             </div>
             <div className="housing__collapses">

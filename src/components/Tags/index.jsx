@@ -4,10 +4,10 @@ function Tags({ tags }) {
     return (
         <div className="tag">
 
-            {tags.map((tag) => {
+            {tags.map((tag, i) => {
                 return (
-                    <div className="tag__container">
-                        <p className="tag__name" key={tag}>{tag}</p>
+                    <div className="tag__container" key={i}>
+                        <p className="tag__name" >{tag}</p>
                     </div>
                 )
             })}
