@@ -4,6 +4,7 @@ import '../assets/sass/pages/_housing.scss';
 import Carousel from "../components/Carousel";
 import HousingTitle from "../components/HousingTitle";
 import Tags from "../components/Tags";
+import Collapse from "../components/Collapse"
 
 function Housing() {
     const { id } = useParams()
@@ -20,6 +21,16 @@ function Housing() {
                     <HousingTitle title={logement.title} location={logement.location} />
                     < Tags tags={logement.tags} />
                 </div>
+            </div>
+            <div className="housing__collapses">
+                <Collapse title="Description" content={logement.description} />
+                <Collapse title="Equipement" content={logement.equipments.map((equipement) => {
+                    return (
+                        <ul className="housing__list" >
+                            <li>{equipement}</li>
+                        </ul>
+                    )
+                })} />
             </div>
         </main>
     )

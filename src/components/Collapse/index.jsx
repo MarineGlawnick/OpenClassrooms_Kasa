@@ -9,8 +9,8 @@ function Collapse(props) {
         setOpen(!isOpen)
     }
     return (
-        <div className="collapse_container">
-            <div className="collapse_container__title" onClick={setOpenCollapse}>
+        <div className="collapse_container" onClick={setOpenCollapse}>
+            <div className="collapse_container__title">
                 <h1>{props.title}</h1>
                 {isOpen ? <img src={arrowUp} alt="An arrow pointing up" /> : <img src={arrowDown} alt="An arrow pointing down" />}
             </div>
