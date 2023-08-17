@@ -24,12 +24,15 @@ const Carousel = ({ Images }) => {
                     </div>
                 )
             })}
-            {length > 1 && (
+
+            {length > 1 && <>
                 <div className="slides__controller">
                     <a onClick={prev}><img src={arrowLeft} alt="Arrow to the left" /></a>
                     <a onClick={next}><img src={arrowRight} alt="Arrow to the right" /></a>
                 </div>
-            )}
+                <div className="slides__counter">{currentIndex + 1}/{length}</div>
+            </>}
+
         </section>
     )
 }

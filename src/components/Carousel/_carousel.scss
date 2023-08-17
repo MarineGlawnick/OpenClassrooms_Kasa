@@ -27,4 +27,13 @@
     &__hidden {
         display: none;
     }
+
+    &__counter {
+        color: white;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
