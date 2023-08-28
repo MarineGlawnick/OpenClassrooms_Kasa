@@ -20,7 +20,7 @@ const Carousel = ({Images}) => {
             {Images.map((image, index) => {
                 return (
                     <div className={index === currentIndex ? 'slides__container' : 'slides__hidden'} key={index}>
-                        < img src={image}/>
+                        < img src={image} alt="Carousel item"/>
                     </div>
                 )
             })}
