@@ -6,9 +6,7 @@ function Tags({ tags }) {
 
             {tags.map((tag, i) => {
                 return (
-                    <div className="tag__container" key={i}>
-                        <p className="tag__name" >{tag}</p>
-                    </div>
+                        <span className="tag__name" key={i}>{tag}</span>
                 )
             })}
 
