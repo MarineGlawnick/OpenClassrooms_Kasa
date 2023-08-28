@@ -3,6 +3,7 @@
 .error {
     color: $primary-color;
     text-align: center;
+    margin-top: 180px;
 
     &__title {
         margin: 0;
@@ -23,4 +24,30 @@
         margin: 180px 0;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .error {
+        &__title {
+            font-size: 96px;
+        }
+
+        &__subtitle {
+            padding: 0 50px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &__link {
+            margin: 130px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .error {
+        &__title {
+            font-size: 150px;
+        }
+    }
 }
