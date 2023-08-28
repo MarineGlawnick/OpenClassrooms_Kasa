@@ -7,7 +7,7 @@ function Rating({ stars }) {
     const displayRedStar = () => {
         const rate = []
         for (let i = 0; i < stars; i++) {
-            rate.push(<img src={redStar} alt="Etoile rouge" />)
+            rate.push(<img src={redStar} alt="Etoile rouge" key={i} />)
         }
         return rate
     }
@@ -17,7 +17,7 @@ function Rating({ stars }) {
         const rate = []
 
         for (let i = 0; i < numberGreyStar; i++) {
-            rate.push(<img src={greyStar} alt="Etoile grise" />)
+            rate.push(<img src={greyStar} alt="Etoile grise" key={i} />)
         }
         return rate
     }
