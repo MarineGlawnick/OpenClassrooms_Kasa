@@ -1,6 +1,6 @@
 .rating {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     img {
         width: 6%;
@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 768px) {
     .rating {
-        justify-content: start;
+        justify-content: flex-start;
     }
 }
 
