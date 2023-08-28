@@ -4,10 +4,10 @@ import CollapseGallery from "../components/CollapseGallery";
 
 function About() {
     return (
-        <div>
+        <main>
             <AboutBanner src={mountainPicture} alt={"A view over a mountain landscape"}/>
             <CollapseGallery/>
-        </div>
+        </main>
 
     )
 }

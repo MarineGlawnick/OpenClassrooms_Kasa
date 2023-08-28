@@ -5,10 +5,10 @@ import CardGallery from "../components/CardGallery"
 
 function Home() {
     return (
-        <div>
+        <main>
             <Banner title="Chez vous, partout et ailleurs" src={bgImg} alt="Image de falaise"/>
             <CardGallery/>
-        </div>
+        </main>
     )
 }
 
