@@ -6,6 +6,7 @@ import HousingTitle from "../components/HousingTitle";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse"
 import HostInfo from "../components/HostInfo";
+import Rating from "../components/Rating";
 
 function Housing() {
     const { id } = useParams()
@@ -23,8 +24,9 @@ function Housing() {
                     <HousingTitle title={logement.title} location={logement.location} />
                     < Tags tags={logement.tags} />
                 </div>
-                <div>
+                <div className="housing__rating">
                     <HostInfo image={logement.host.picture} host={logement.host.name} />
+                    <Rating stars={logement.rating} />
                 </div>
             </div>
             <div className="housing__collapses">
