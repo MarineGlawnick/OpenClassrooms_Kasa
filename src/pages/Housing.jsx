@@ -31,13 +31,7 @@ function Housing() {
             </div>
             <div className="housing__collapses">
                 <Collapse title="Description" content={logement.description} />
-                <Collapse title="Equipement" content={logement.equipments.map((equipement) => {
-                    return (
-                        <ul className="housing__list" >
-                            <li>{equipement}</li>
-                        </ul>
-                    )
-                })} />
+                <Collapse title="Equipement" content={logement.equipments} />
             </div>
         </main>
     )
