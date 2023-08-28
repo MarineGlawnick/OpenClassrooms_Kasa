@@ -10,7 +10,9 @@
         display: flex;
         justify-content: space-between;
 
-        a {
+        button {
+            background-color: transparent;
+            border: none;
             padding: 0 10px;
         }
     }

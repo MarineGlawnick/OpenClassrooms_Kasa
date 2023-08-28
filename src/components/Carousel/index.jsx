@@ -27,8 +27,8 @@ const Carousel = ({Images}) => {
 
             {length > 1 && <>
                 <div className="slides__controller">
-                    <a onClick={prev}><img src={arrowLeft} alt="Arrow to the left"/></a>
-                    <a onClick={next}><img src={arrowRight} alt="Arrow to the right"/></a>
+                    <button onClick={prev}><img src={arrowLeft} alt="Arrow to the left"/></button>
+                    < button onClick={next}><img src={arrowRight} alt="Arrow to the right"/></button>
                 </div>
                 <div className="slides__counter">{currentIndex + 1}/{length}</div>
             </>}
