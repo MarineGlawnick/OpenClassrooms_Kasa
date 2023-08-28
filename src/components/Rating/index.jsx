@@ -2,12 +2,12 @@ import "./_rating.scss";
 import redStar from "../../assets/img/red_star.svg"
 import greyStar from "../../assets/img/grey_star.svg"
 
-function Rating({ stars }) {
+function Rating({stars}) {
 
     const displayRedStar = () => {
         const rate = []
         for (let i = 0; i < stars; i++) {
-            rate.push(<img src={redStar} alt="Etoile rouge" key={i} />)
+            rate.push(<img src={redStar} alt="Etoile rouge" key={i}/>)
         }
         return rate
     }
@@ -17,7 +17,7 @@ function Rating({ stars }) {
         const rate = []
 
         for (let i = 0; i < numberGreyStar; i++) {
-            rate.push(<img src={greyStar} alt="Etoile grise" key={i} />)
+            rate.push(<img src={greyStar} alt="Etoile grise" key={i}/>)
         }
         return rate
     }
@@ -29,4 +29,5 @@ function Rating({ stars }) {
         </div>
     )
 }
+
 export default Rating

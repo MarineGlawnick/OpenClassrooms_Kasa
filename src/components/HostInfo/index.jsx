@@ -1,6 +1,6 @@
 import "./_host.scss";
 
-function HostInfo({ image, host }) {
+function HostInfo({image, host}) {
     return (
         <div className="host">
             <p className="host__name">{host}</p>
@@ -8,6 +8,5 @@ function HostInfo({ image, host }) {
         </div>
     )
 }
-
 
 export default HostInfo;

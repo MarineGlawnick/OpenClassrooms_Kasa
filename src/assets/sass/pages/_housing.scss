@@ -24,20 +24,22 @@
         align-items: end;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .housing{
-        &__info{
+    .housing {
+        &__info {
             flex-direction: column;
             gap: 15px;
         }
-        &__rating{
+
+        &__rating {
             width: 100%;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
         }
 
-        &__collapses{
+        &__collapses {
             flex-direction: column;
             gap: 20px
         }
