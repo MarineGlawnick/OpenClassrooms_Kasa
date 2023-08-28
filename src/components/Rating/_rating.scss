@@ -6,3 +6,17 @@
         width: 6%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .rating {
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .rating {
+        img {
+            width: 10%;
+        }
+    }
+}
