@@ -1,5 +1,6 @@
 .banner {
-    padding-top: 60px;
+    position: relative;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +24,26 @@
 
 @media screen and (max-width: 768px) {
     .banner {
-        justify-content: left;
+        margin-top: 30px;
+
+        img {
+            height: 112px;
+        }
 
         h1 {
-            font-size: 24px;
-            padding-left: 32px;
-            line-height: 24px;
+            font-size: 20px;
+            line-height: 20px;
+            padding-left: 10px;
         }
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .banner {
+        img {
+            height: 150px;
+        }
+
         h1 {
             font-size: 30px;
         }
