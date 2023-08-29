@@ -1,24 +1,23 @@
-// import Header from "./components/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home/>
-    },
-    {
-        path: "/about",
-        element: <About/>
-    }
-])
+import {Route, Routes} from "react-router-dom";
+import Header from "./components/Header";
+import Housing from "./pages/Housing";
+import Error404 from "./pages/Error404";
+import Footer from "./components/Footer";
+import React from "react";
 
 function App() {
     return (
         <div className="App">
-            {/* <Header/> */}
-            <RouterProvider router={router}/>
+            <Header/>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/about' element={<About/>}/>
+                <Route path='/housing/:id' element={<Housing/>}/>
+                <Route path="*" element={<Error404/>}/>
+            </Routes>
+            <Footer/>
         </div>
     );
 }
