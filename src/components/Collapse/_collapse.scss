@@ -42,3 +42,23 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .collapse_container {
+        &__title {
+            h1{
+                font-size: 20px;
+            }
+        }
+
+        &__content{
+            p{
+                font-size: 18px;
+            }
+
+            &--list{
+                font-size: 18px;
+            }
+        }
+    }
+}
